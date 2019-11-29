@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Preguntas</title>
+	<link rel="stylesheet" href="./css/preguntas.css">
+	<link href="./assets/heart.png" rel="icon">
+</head>
+
+<body onload="noBack();">
+	<!-- Navbar -->
+	<header class="nav">
+		<input type="checkbox" id="nav-check">
+		<div class="nav-header">
+			<div class="nav-title">
+				Diagnóstico de enfermedades cardiovasculares aplicando Lógica Difusa
+			</div>
+		</div>
+		<div class="nav-btn">
+			<label for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		</div>
+
+		<div class="nav-links">
+			<a href="index.html">Inicio</a>
+			<a href="diagnosticos.html">Diagnóstico</a>
+		</div>
+	</header>
+
+	<!-- Contenido -->
+	<div class="contenedor">
+		<h1>Diagnóstico específico</h1>
+		<!-- <h4 id="progreso">Pregunta 1 de 15</h4> -->
+		<div id="pregunta1">
+			<!-- <h6>Seleccione al menos dos respuestas</h6> -->
+			<h3>Seleccione al menos dos enfermedades</h3>
+			<div class="res">
+				<ul class="lista">
+					<li>
+						<input type="checkbox" value="1" id="E1" name="enf">
+						<label for="E1">Cardiopatía isquémica</label>
+					</li>
+					<li>
+						<input type="checkbox" value="2" id="E2" name="enf">
+						<label for="E2">Arritmias</label>
+					</li>
+					<li>
+						<input type="checkbox" value="3" id="E3" name="enf">
+						<label for="E3">Fibrilación auricular</label>
+					</li>
+					<li>
+						<input type="checkbox" value="4" id="E4" name="enf">
+						<label for="E4">Valvulopatías</label>
+					</li>
+					<li>
+						<input type="checkbox" value="5" id="E5" name="enf">
+						<label for="E5">Insuficiencia cardiaca</label>
+					</li>
+					<li>
+						<input type="checkbox" value="6" id="E6" name="enf">
+						<label for="E6">Cardiopatía coronaria</label>
+					</li>
+					<li>
+						<input type="checkbox" value="7" id="E7" name="enf">
+						<label for="E7">Infarto de miocardio</label>
+					</li>
+					<li>
+						<input type="checkbox" value="8" id="E8" name="enf">
+						<label for="E8">Miocardiopatías</label>
+					</li>
+					<li>
+						<input type="checkbox" value="9" id="E9" name="enf">
+						<label for="E9">Tromboembolismo pulmonar</label>
+					</li>
+					<li>
+						<input type="checkbox" value="10" id="E10" name="enf">
+						<label for="E10">Cardiopatía congénita</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<a class="botonSiguiente" onclick="getSelectedIllness()">Comenzar</a>
+	</div>
+	<script src="./js/functions.js"></script>
+</body>
+
+</html>
